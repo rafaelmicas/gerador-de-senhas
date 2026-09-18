@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: #180d12;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 430px;
+    background: #291820;
+    padding: 35px;
+    border-radius: 18px;
+    border: 1px solid #5c2930;
+    box-shadow: 0 0 30px rgba(255, 70, 70, .20);
+}
+
+h1 {
+    color: #ffd43b;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.senha-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+#senha {
+    flex: 1;
+    height: 50px;
+    border: 1px solid #63313a;
+    outline: none;
+    border-radius: 10px;
+    background: #21131a;
+    color: #ffd43b;
+    padding: 15px;
+    font-size: 18px;
+}
+
+#copiar {
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    background: #e63946;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#copiar:hover {
+    background: #c92f3b;
+    transform: scale(1.05);
+}
+
+.configuracoes {
+    color: white;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+#tamanho {
+    width: 100%;
+    margin-bottom: 25px;
+    accent-color: #ffd43b;
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.opcao input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #e63946;
+}
+
+#gerar {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #e63946, #ffb703);
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#gerar:hover {
+    background: linear-gradient(90deg, #c92f3b, #e09b00);
+    transform: translateY(-2px);
+}
+
+.forca {
+    margin-top: 30px;
+    color: white;
+}
+
+.forca h3 {
+    margin-bottom: 10px;
+    color: #ffd43b;
+}
+
+.barra {
+    width: 100%;
+    height: 14px;
+    background: #21131a;
+    border: 1px solid #63313a;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+#nivel {
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #e63946, #ffb703);
+    transition: .4s;
+}
+
+#textoForca {
+    margin-top: 12px;
+    text-align: center;
+    color: #ffd43b;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .senha-box {
+        flex-direction: column;
+    }
+
+    #copiar {
+        width: 100%;
+        height: 45px;
+    }
+}
